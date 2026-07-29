@@ -1,17 +1,40 @@
-## Version 0.1
+# ASCEND OS Roadmap
 
-Project Setup
+## ✅ Sprint 0 — Project Setup
 
 Completed
 
-## Version 0.2
+- React
+- Tailwind
+- ESLint
+- Prettier
+- GitHub Actions
+- Repository setup
 
-Dashboard
+---
+
+## ✅ Sprint 1 — Application Shell
+
+Completed
+
+- Feature-based architecture
+- React Router
+- Nested routes
+- AppLayout
+- Navbar
+- Sidebar
+- Configuration-driven navigation
+
+---
+
+## 🔄 Sprint 2 — Dashboard UI
 
 In Progress
 
-## Version 0.3
+Planned:
 
-Analytics
-
-Planned
+- Dashboard cards
+- Progress cards
+- Today's checklist
+- Streak tracker
+- Welcome section

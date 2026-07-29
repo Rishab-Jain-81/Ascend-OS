@@ -1,21 +1,53 @@
-# Architecture Decisions
+# Architecture Decision Records
+
+---
 
 ## ADR-001
 
 ### Title
 
-Feature-Based Architecture
+Adopt Feature-Based Folder Structure
 
 ### Status
 
 Accepted
 
-### Reason
+### Context
 
-The application is expected to grow over time into a full-stack engineering dashboard with many modules.
-
-Organizing by features improves scalability, maintainability, and team collaboration compared to grouping by file type.
+The application will continue to grow with multiple independent modules.
 
 ### Decision
 
-Use Feature-Based Architecture from the beginning.
+Organize code by feature instead of file type.
+
+### Consequences
+
+- Better scalability
+- Easier maintenance
+- Clear ownership of features
+
+---
+
+## ADR-002
+
+### Title
+
+Use Layout Routes with React Router
+
+### Status
+
+Accepted
+
+### Context
+
+Every page shares the same Navbar and Sidebar.
+
+### Decision
+
+Use `AppLayout` with React Router's `Outlet` to render page-specific content inside a shared layout.
+
+### Consequences
+
+- Eliminates duplicated layout code
+- Centralizes shared UI
+- Simplifies future expansion
