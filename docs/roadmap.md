@@ -27,14 +27,29 @@ Completed
 
 ---
 
-## 🔄 Sprint 2 — Dashboard UI
+## ✅ Sprint 2 — Dashboard Foundation
 
-In Progress
+Completed
 
-Planned:
-
-- Dashboard cards
-- Progress cards
-- Today's checklist
-- Streak tracker
+- Dashboard layout
+- Reusable Card component
 - Welcome section
+- Current Phase card
+- Current Streak card
+- Overall Progress card
+- Today's Tasks card
+- Responsive dashboard grid
+
+---
+
+## ✅ Sprint 3 — Data Driven Dashboard
+
+Completed
+
+- Dashboard data abstraction
+- ProgressBar component
+- Tasks rendered with map()
+- Dashboard reads from data layer
+- Reduced hardcoded UI values
+
+---
