@@ -53,3 +53,18 @@ Completed
 - Reduced hardcoded UI values
 
 ---
+
+## ✅ Sprint 4 — Dashboard Component Architecture
+
+Completed
+
+- Dashboard componentization
+- DashboardGrid component
+- WelcomeSection component
+- PhaseCard component
+- StreakCard component
+- ProgressCard component
+- TasksCard component
+- Improved separation of concerns
+
+---
