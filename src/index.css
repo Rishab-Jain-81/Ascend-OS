@@ -52,7 +52,7 @@ html,
 body {
   min-height: 100vh;
   margin: 0;
-  background: rgb(114, 114, 114);
+  background: var(--bg-light);
 }
 
 #root {

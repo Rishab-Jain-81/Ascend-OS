@@ -8,7 +8,7 @@ function AppLayout() {
       <Navbar />
       <div className="flex">
         <Sidebar />
-        <main className="flex-1 p-6">
+        <main className="flex-1 p-6 bg-(--bg-light) text-(--text)">
           <Outlet />
         </main>
       </div>
