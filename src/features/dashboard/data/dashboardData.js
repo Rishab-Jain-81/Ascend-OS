@@ -16,12 +16,12 @@ export const dashboardData = {
 
   progress: {
     heading: 'Overall Progress',
-    body: '65%',
+    progress: '65%',
   },
 
   tasks: {
     heading: "Today's Tasks",
-    body: [
+    tasks: [
       {
         id: 0,
         task: 'Backend',

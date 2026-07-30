@@ -70,3 +70,18 @@ UI Components
 User
 
 UI components receive data through props instead of owning the data themselves.
+
+## Dashboard Component Hierarchy
+
+DashboardPage
+│
+├── DashboardGrid
+│
+├── WelcomeSection
+├── PhaseCard
+├── StreakCard
+├── ProgressCard
+│   └── ProgressBar
+└── TasksCard
+
+The DashboardPage composes feature-specific components while shared UI components remain inside `components/ui`.

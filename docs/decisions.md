@@ -104,3 +104,30 @@ Store dashboard information in a dedicated data module instead of hardcoding val
 - Cleaner UI
 - Better scalability
 - Easier backend integration
+
+---
+
+## ADR-005
+
+### Title
+
+Componentize Dashboard Feature
+
+### Status
+
+Accepted
+
+### Context
+
+DashboardPage was growing in size as more dashboard sections were added.
+
+### Decision
+
+Extract each dashboard section into its own component while keeping layout orchestration inside DashboardPage.
+
+### Consequences
+
+- Better readability
+- Improved maintainability
+- Easier feature expansion
+- Clear component responsibilities
