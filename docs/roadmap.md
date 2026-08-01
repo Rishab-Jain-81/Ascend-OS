@@ -77,3 +77,13 @@ completed
 - Task Completion
 - Progress Calculation
 - localStorage
+
+## ✅ Sprint 6 - Theme Management
+
+completed
+
+- Theme Context
+- Theme Provider
+- useTheme custom Hook
+- Theme Persistence
+- CSS Variable Switching
