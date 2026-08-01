@@ -131,3 +131,29 @@ Extract each dashboard section into its own component while keeping layout orche
 - Improved maintainability
 - Easier feature expansion
 - Clear component responsibilities
+
+---
+
+## ADR-006
+
+## Tiltle
+
+Dashboard state Management
+
+## status
+
+Accepted
+
+## Decision
+
+Moved dashboard state management into a custom hook.
+
+### Reason
+
+Keeps UI components focused on rendering while business logic lives inside hooks.
+
+### Consequences
+
+- Reusable
+- Easier testing
+- Better separation of concerns

@@ -16,7 +16,7 @@ export const dashboardData = {
 
   progress: {
     heading: 'Overall Progress',
-    progress: '65%',
+    progress: '0%',
   },
 
   tasks: {
@@ -25,22 +25,27 @@ export const dashboardData = {
       {
         id: 0,
         task: 'Backend',
+        completed: false,
       },
       {
         id: 1,
         task: 'DSA',
+        completed: false,
       },
       {
         id: 2,
         task: 'Reading',
+        completed: false,
       },
       {
         id: 3,
         task: 'Workout',
+        completed: false,
       },
       {
         id: 4,
         task: 'Reflection',
+        completed: false,
       },
     ],
   },

@@ -4,18 +4,23 @@ import PhaseCard from '../components/PhaseCard.jsx';
 import StreakCard from '../components/StreakCard.jsx';
 import ProgressCard from '../components/ProgressCard.jsx';
 import TasksCard from '../components/TasksCard.jsx';
-import { dashboardData } from '../data/dashboardData.js';
+import useDashboard from '../hooks/useDaskboard.js';
 
 function DashboardPage() {
+  const { dashboard, toggleTask, progress } = useDashboard();
+
   return (
     <>
       <h1 className="text-3xl font-bold">Dashboard</h1>
       <DashboardGrid>
-        <WelcomeSection welcome={dashboardData.welcome} />
-        <PhaseCard phase={dashboardData.phase} />
-        <StreakCard streak={dashboardData.streak} />
-        <ProgressCard progress={dashboardData.progress} />
-        <TasksCard tasks={dashboardData.tasks} />
+        <WelcomeSection welcome={dashboard.welcome} />
+        <PhaseCard phase={dashboard.phase} />
+        <StreakCard streak={dashboard.streak} />
+        <ProgressCard
+          heading={dashboard.progress.heading}
+          progress={progress}
+        />
+        <TasksCard tasks={dashboard.tasks} toggleTask={toggleTask} />
       </DashboardGrid>
     </>
   );
