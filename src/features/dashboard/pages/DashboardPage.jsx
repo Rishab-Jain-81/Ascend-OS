@@ -7,7 +7,8 @@ import TasksCard from '../components/TasksCard.jsx';
 import useDashboard from '../hooks/useDaskboard.js';
 
 function DashboardPage() {
-  const { dashboard, toggleTask, progress } = useDashboard();
+  const { dashboard, toggleTask, progress, totalTasks, completedTasks } =
+    useDashboard();
 
   return (
     <>
@@ -20,7 +21,12 @@ function DashboardPage() {
           heading={dashboard.progress.heading}
           progress={progress}
         />
-        <TasksCard tasks={dashboard.tasks} toggleTask={toggleTask} />
+        <TasksCard
+          tasks={dashboard.tasks}
+          toggleTask={toggleTask}
+          completedTasks={completedTasks}
+          totalTasks={totalTasks}
+        />
       </DashboardGrid>
     </>
   );

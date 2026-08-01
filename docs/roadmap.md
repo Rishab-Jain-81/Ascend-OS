@@ -87,3 +87,13 @@ completed
 - useTheme custom Hook
 - Theme Persistence
 - CSS Variable Switching
+
+## ✅ Sprint 7 - Checklist
+
+completed
+
+- Interactive Daily Checklist
+- Reusable Checklist
+- Reusable ChecklistItem
+- Completed Counter
+- Empty State
