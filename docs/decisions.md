@@ -157,3 +157,34 @@ Keeps UI components focused on rendering while business logic lives inside hooks
 - Reusable
 - Easier testing
 - Better separation of concerns
+
+---
+
+## ADR-007
+
+## Tiltle
+
+Theme Management
+
+## status
+
+Accepted
+
+## Decision
+
+Implemented global theme management using React Context.
+
+### Reason
+
+The application theme is shared by multiple components.
+
+Using Context avoids prop drilling and keeps theme management centralized.
+
+### Consequenses
+
+- Global access
+- Reusable hook
+- Easy persistence
+- Scalable architecture
+
+---
