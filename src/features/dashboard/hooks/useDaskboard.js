@@ -28,18 +28,18 @@ function useDashboard() {
       };
     });
   }
-
-  const completedTasks = dashboard.tasks.tasks.filter((task) => task.completed);
-  const totalTasks = dashboard.tasks.tasks.length;
+  const tasks = dashboard.tasks.tasks;
+  const completedTasks = tasks.filter((task) => task.completed).length;
+  const totalTasks = tasks.length;
   const progress = Math.round(
-    totalTasks === 0 ? 0 : (completedTasks.length / totalTasks) * 100
+    totalTasks === 0 ? 0 : (completedTasks / totalTasks) * 100
   );
 
   useEffect(() => {
     saveDashboard(dashboard);
   }, [dashboard]);
 
-  return { dashboard, toggleTask, progress };
+  return { dashboard, toggleTask, progress, completedTasks, totalTasks };
 }
 
 export default useDashboard;

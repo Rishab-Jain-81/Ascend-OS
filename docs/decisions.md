@@ -188,3 +188,32 @@ Using Context avoids prop drilling and keeps theme management centralized.
 - Scalable architecture
 
 ---
+
+## ADR-008
+
+## Tiltle
+
+Checklist
+
+## status
+
+Accepted
+
+## Decision
+
+Separated the daily checklist into smaller reusable components.
+
+### Reason
+
+TasksCard had multiple responsibilities.
+
+Splitting it into Checklist and ChecklistItem follows the Single Responsibility Principle and improves maintainability.
+
+### Consequences
+
+- Easier to test
+- Easier to reuse
+- Cleaner code
+- Better scalability
+
+---
