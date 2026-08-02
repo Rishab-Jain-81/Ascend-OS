@@ -97,3 +97,12 @@ completed
 - Reusable ChecklistItem
 - Completed Counter
 - Empty State
+
+## ✅ Sprint 8 - Dynamic Welcome Section
+
+completed
+
+- Dynamic Greeting
+- Live Clock
+- Dynamic Date
+- useDateTime Hook
