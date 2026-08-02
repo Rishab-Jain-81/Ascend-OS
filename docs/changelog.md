@@ -40,3 +40,16 @@
 - Refactored TasksCard into smaller reusable components.
 - Moved task rendering logic into Checklist.
 - Moved individual task rendering into ChecklistItem.
+
+---
+
+## Sprint 7
+
+### Added
+- Dynamic greeting based on current time
+- Live clock
+- Dynamic formatted date
+- useDateTime custom hook
+
+### Changed
+- Welcome section now displays real-time information instead of hardcoded values.

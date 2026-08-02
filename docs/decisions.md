@@ -217,3 +217,32 @@ Splitting it into Checklist and ChecklistItem follows the Single Responsibility 
 - Better scalability
 
 ---
+
+## ADR-009
+
+## Tiltle
+
+Dynamic Welcome Section
+
+## status
+
+Accepted
+
+## Decision
+
+Introduced a dedicated useDateTime hook.
+
+### Reason
+
+Date and time are independent application concerns.
+
+Moving this logic into a custom hook keeps UI components focused on rendering.
+
+### Consequences
+
+- Reusable
+- Testable
+- Easier to maintain
+- Consistent time formatting
+
+---
