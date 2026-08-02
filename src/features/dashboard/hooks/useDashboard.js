@@ -34,12 +34,22 @@ function useDashboard() {
   const progress = Math.round(
     totalTasks === 0 ? 0 : (completedTasks / totalTasks) * 100
   );
+  const completedDays = dashboard.weekly.data.filter(
+    (day) => day.completed
+  ).length;
 
   useEffect(() => {
     saveDashboard(dashboard);
   }, [dashboard]);
 
-  return { dashboard, toggleTask, progress, completedTasks, totalTasks };
+  return {
+    dashboard,
+    toggleTask,
+    progress,
+    completedTasks,
+    totalTasks,
+    completedDays,
+  };
 }
 
 export default useDashboard;

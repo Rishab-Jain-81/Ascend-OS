@@ -49,4 +49,17 @@ export const dashboardData = {
       },
     ],
   },
+  weekly: {
+    heading: 'Weekly Consistency',
+    data: [
+      { id: 0, day: 'Monday', completed: true },
+      { id: 1, day: 'Tuesday', completed: true },
+      { id: 2, day: 'Wednesday', completed: true },
+      { id: 3, day: 'Thursday', completed: null },
+      { id: 4, day: 'Friday', completed: null },
+      { id: 5, day: 'Saturday', completed: null },
+      { id: 6, day: 'Sunday', completed: false },
+    ],
+    footer: '3/7',
+  },
 };

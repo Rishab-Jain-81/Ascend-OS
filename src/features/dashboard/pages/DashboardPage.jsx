@@ -4,12 +4,19 @@ import PhaseCard from '../components/PhaseCard.jsx';
 import StreakCard from '../components/StreakCard.jsx';
 import ProgressCard from '../components/ProgressCard.jsx';
 import TasksCard from '../components/TasksCard.jsx';
-import useDashboard from '../hooks/useDaskboard.js';
+import useDashboard from '../hooks/useDashboard.js';
 import useDateTime from '../hooks/useDateTime.js';
+import WeeklyConsistencyCard from '../components/WeeklyConsistencyCard.jsx';
 
 function DashboardPage() {
-  const { dashboard, toggleTask, progress, totalTasks, completedTasks } =
-    useDashboard();
+  const {
+    dashboard,
+    toggleTask,
+    progress,
+    totalTasks,
+    completedTasks,
+    completedDays,
+  } = useDashboard();
   const { formattedDate, formattedTime, greeting } = useDateTime();
   return (
     <>
@@ -38,6 +45,11 @@ function DashboardPage() {
           completedTasks={completedTasks}
           totalTasks={totalTasks}
         />
+        <WeeklyConsistencyCard
+          heading={dashboard.weekly.heading}
+          data={dashboard.weekly.data}
+          completedDays={completedDays}
+        ></WeeklyConsistencyCard>
       </DashboardGrid>
     </>
   );

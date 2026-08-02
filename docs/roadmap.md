@@ -106,3 +106,11 @@ completed
 - Live Clock
 - Dynamic Date
 - useDateTime Hook
+
+## ✅ Sprint 9 - Weekly Consistency Card
+
+completed
+
+- Weekly Consistency Card
+- Day Status component
+- Dynamic weekly data
